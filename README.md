@@ -134,15 +134,13 @@ Sobre
 Contato
 <img width="1583" height="311" alt="image" src="https://github.com/user-attachments/assets/f8059aba-41e9-4839-b621-59968698db82" />
 
-![Preview do projeto](./images/preview.png)
-
 ---
 
 ## 🔗 Projeto
 
-🌐 **Acesse o site:** *adicione aqui o link do projeto*
+🌐 **Acesse o site:** (https://peixariaeemporiodovale.vercel.app/)
 
-💻 **Repositório:** *adicione aqui o link do GitHub*
+💻 **Repositório:** (https://github.com/amykrumenauer/Peixaria)
 
 ---
 
