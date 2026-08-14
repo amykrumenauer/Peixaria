@@ -129,7 +129,7 @@ Produtos
 <img width="1583" height="537" alt="image" src="https://github.com/user-attachments/assets/4255bac9-5a4f-4672-934d-2457dd0e4331" />
 
 Sobre 
-<img width="1583" height="537" alt="image" src="https://github.com/user-attachments/assets/e24a9dfb-bee3-4bee-a139-afd9377e9c43" />
+<img width="1571" height="361" alt="image" src="https://github.com/user-attachments/assets/c9875676-a095-409c-be8f-a54bf4649096" />
 
 Contato
 <img width="1583" height="311" alt="image" src="https://github.com/user-attachments/assets/f8059aba-41e9-4839-b621-59968698db82" />
