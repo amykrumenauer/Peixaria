@@ -172,7 +172,7 @@
 
   background-color: #F9D923;
 
-  color: #003459;
+  color: #f7f7f7;
 
   font-family: 'Poppins', sans-serif;
 
@@ -190,7 +190,7 @@
 }
 
 .btn-cardapio:hover {
-  background-color: #F9D923;
+  background-color: #003459;
 
   transform: translateY(-3px);
 
