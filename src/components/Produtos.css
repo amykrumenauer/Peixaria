@@ -1,60 +1,283 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600&display=swap');
 
 .produtos {
+  position: relative;
+
   background-color: #003459;
-  padding: 1rem 2rem;
-  text-align: center;
+
+  padding: 6rem 2rem;
+
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  overflow: hidden;
+}
+
+.produtos-conteudo {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+.produtos-tag {
+  display: inline-block;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.75rem;
+
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+
+  color: #F9D923;
+
+  margin-bottom: 0.8rem;
 }
 
 .produtos-titulo {
-  font-family: 'Amatic SC', cursive;
-  font-size: 3rem;
+  font-family: 'DM Serif Display', serif;
+
+  font-weight: 400;
+
+  font-size: 3.5rem;
+
+  line-height: 1.1;
+
   color: #F9D923;
-  margin-bottom: 1rem;
+
+  margin: 0 0 1rem;
 }
 
 .produtos-descricao {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 1.1rem;
-  max-width: 700px;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+
+  font-weight: 400;
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  max-width: 720px;
+
+  margin: 0 auto 4rem;
+}
+
+
+/* ================================
+   DESTAQUE
+================================ */
+
+.produtos-destaque {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 5rem;
+
+  text-align: left;
+}
+
+
+/* ================================
+   IMAGEM
+================================ */
+
+.produtos-imagem-container {
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+
+  max-width: 480px;
 }
 
 .produtos-img {
   width: 100%;
-  max-width: 700px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  max-width: 440px;
+
+  height: 300px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+  transition: transform 0.4s ease;
+}
+
+.produtos-img:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ================================
+   TEXTO
+================================ */
+
+.produtos-info {
+  flex: 1;
+
+  max-width: 420px;
+}
+
+.produtos-info h3 {
+  font-family: 'DM Serif Display', serif;
+
+  font-size: 2.2rem;
+
+  font-weight: 400;
+
+  color: #fff;
+
+  margin: 0 0 1rem;
+}
+
+.produtos-info p {
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.95rem;
+
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.85);
+
   margin-bottom: 1.5rem;
 }
 
+
+/* ================================
+   BOTÃO
+================================ */
+
 .btn-cardapio {
-  display: inline-block;
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
   background-color: #F9D923;
-  color: #000;
+
+  color: #003459;
+
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  padding: 0.75rem 1.5rem;
-  border-radius: 25px;
+
+  font-weight: 600;
+
+  font-size: 0.95rem;
+
+  padding: 0.9rem 1.8rem;
+
+  border-radius: 30px;
+
   text-decoration: none;
-  transition: background-color 0.3s ease;
-  margin-bottom: 1.5rem; /* para separar do texto de baixo */
+
+  transition: all 0.3s ease;
 }
 
 .btn-cardapio:hover {
-  background-color: #e6c419;
+  background-color: #fff;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+
+/* ================================
+   MENSAGEM
+================================ */
+
 .produtos-mensagem {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  color: white;
-  max-width: 700px;
+  margin-top: 1.2rem !important;
+
+  font-size: 0.85rem !important;
+
+  color: #F9D923 !important;
+}
+
+
+/* ================================
+   RESPONSIVO
+================================ */
+
+@media (max-width: 800px) {
+
+  .produtos {
+    padding: 4rem 1.5rem;
+  }
+
+  .produtos-titulo {
+    font-size: 2.8rem;
+  }
+
+  .produtos-descricao {
+    margin-bottom: 3rem;
+  }
+
+  .produtos-destaque {
+    flex-direction: column;
+
+    gap: 2.5rem;
+
+    text-align: center;
+  }
+
+  .produtos-imagem-container {
+    width: 100%;
+  }
+
+  .produtos-img {
+    max-width: 400px;
+
+    height: 260px;
+  }
+
+  .produtos-info {
+    max-width: 600px;
+  }
+
+  .produtos-info h3 {
+    font-size: 2rem;
+  }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+  .produtos-titulo {
+    font-size: 2.4rem;
+  }
+
+  .produtos-descricao {
+    font-size: 0.9rem;
+  }
+
+  .produtos-img {
+    height: 230px;
+
+    border-radius: 14px;
+  }
+
+  .produtos-info h3 {
+    font-size: 1.8rem;
+  }
+
 }
