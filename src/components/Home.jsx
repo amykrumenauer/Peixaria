@@ -1,14 +1,21 @@
 import React from 'react';
 import './Home.css';
+import peixesFundo from '../assets/peixes-fundo.png';
 
 const Home = () => {
   return (
     <section id="home" className="home">
 
-      {/* elementos decorativos */}
-      <span className="fish fish-1">◀)))≋</span>
-      <span className="fish fish-2">◀)))≋</span>
+      {/* cardume decorativo */}
+      <div className="peixes-fundo">
+        <img
+          src={peixesFundo}
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
 
+      {/* conteúdo principal */}
       <div className="home-content">
 
         <span className="home-tag">
@@ -23,6 +30,10 @@ const Home = () => {
 
         <p className="highlight">
           Qualidade incomparável!
+        </p>
+
+        <p className="subtitle">
+          Eleita a melhor Tilápia fresca da região!
         </p>
 
         <a
