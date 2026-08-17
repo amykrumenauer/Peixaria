@@ -5,8 +5,18 @@ import tilapia from '../assets/tilapia.png';
 const Home = () => {
   return (
     <section id="home" className="home">
-      <div className="home-left">
-        <span className="home-tag">PEIXARIA & EMPÓRIO DO VALE</span>
+
+      {/* elementos decorativos */}
+      <span className="fish fish-1">◀)))≋</span>
+      <span className="fish fish-2">◀)))≋</span>
+      <span className="fish fish-3">◀)))≋</span>
+      <span className="fish fish-4">◀)))≋</span>
+
+      <div className="home-content">
+
+        <span className="home-tag">
+          PEIXARIA & EMPÓRIO DO VALE
+        </span>
 
         <h1 className="title">
           Nossos peixes,
@@ -14,7 +24,9 @@ const Home = () => {
           seu sorriso.
         </h1>
 
-        <p className="highlight">Qualidade incomparável!</p>
+        <p className="highlight">
+          Qualidade incomparável!
+        </p>
 
         <p className="subtitle">
           Eleita a melhor Tilápia fresca da região!
@@ -28,15 +40,17 @@ const Home = () => {
         >
           Faça seu pedido
         </a>
+
+        <div className="fish-image">
+          <img
+            src={tilapia}
+            alt="Tilápia fresca"
+            className="tilapia-img"
+          />
+        </div>
+
       </div>
 
-      <div className="home-right">
-        <img
-          src={tilapia}
-          alt="Tilápia fresca"
-          className="tilapia-img"
-        />
-      </div>
     </section>
   );
 };
