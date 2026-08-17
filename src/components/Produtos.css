@@ -141,7 +141,7 @@
 
   font-weight: 400;
 
-  color: #fff;
+  color: #F9D923;
 
   margin: 0 0 1rem;
 }
@@ -190,7 +190,7 @@
 }
 
 .btn-cardapio:hover {
-  background-color: #fff;
+  background-color: #F9D923;
 
   transform: translateY(-3px);
 
