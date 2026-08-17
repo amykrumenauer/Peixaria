@@ -32,10 +32,6 @@ const Home = () => {
           Qualidade incomparável!
         </p>
 
-        <p className="subtitle">
-          Eleita a melhor Tilápia fresca da região!
-        </p>
-
         <a
           href="https://wa.me/5541991064083"
           target="_blank"
