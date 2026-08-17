@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import tilapia from '../assets/tilapia.png';
 
 const Home = () => {
   return (
@@ -9,8 +8,6 @@ const Home = () => {
       {/* elementos decorativos */}
       <span className="fish fish-1">◀)))≋</span>
       <span className="fish fish-2">◀)))≋</span>
-      <span className="fish fish-3">◀)))≋</span>
-      <span className="fish fish-4">◀)))≋</span>
 
       <div className="home-content">
 
@@ -26,10 +23,6 @@ const Home = () => {
 
         <p className="highlight">
           Qualidade incomparável!
-        </p>
-
-        <p className="subtitle">
-          Eleita a melhor Tilápia fresca da região!
         </p>
 
         <a
