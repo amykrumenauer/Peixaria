@@ -34,14 +34,6 @@ const Home = () => {
           Faça seu pedido
         </a>
 
-        <div className="fish-image">
-          <img
-            src={tilapia}
-            alt="Tilápia fresca"
-            className="tilapia-img"
-          />
-        </div>
-
       </div>
 
     </section>

@@ -187,32 +187,6 @@
   animation: swim 7s ease-in-out infinite reverse;
 }
 
-/* peixe inferior esquerdo */
-
-.fish-3 {
-  bottom: 18%;
-  left: 12%;
-
-  font-size: 3rem;
-
-  transform: rotate(8deg);
-
-  animation: swim 8s ease-in-out infinite;
-}
-
-/* peixe inferior direito */
-
-.fish-4 {
-  bottom: 12%;
-  right: 13%;
-
-  font-size: 3.5rem;
-
-  transform: scaleX(-1) rotate(5deg);
-
-  animation: swim 7s ease-in-out infinite reverse;
-}
-
 
 /* movimento suave */
 
@@ -253,14 +227,6 @@
     font-size: 1.25rem;
   }
 
-  .subtitle {
-    font-size: 0.95rem;
-  }
-
-  .tilapia-img {
-    max-width: 330px;
-  }
-
   .fish {
     font-size: 2.5rem;
 
@@ -274,13 +240,4 @@
   .fish-2 {
     right: -10px;
   }
-
-  .fish-3 {
-    left: 2%;
-  }
-
-  .fish-4 {
-    right: 2%;
-  }
-
 }
