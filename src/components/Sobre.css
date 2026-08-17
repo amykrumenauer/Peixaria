@@ -1,31 +1,287 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600&display=swap');
 
 .sobre {
   background-color: #ffffff;
-  padding: 1rem 2rem;
-  text-align: center;
+
+  padding: 6rem 2rem;
+
   color: #000;
 }
 
-.sobre-titulo {
-  font-family: 'Amatic SC', cursive;
-  font-size: 3rem;
+.sobre-conteudo {
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+.sobre-tag {
+  display: block;
+
+  text-align: center;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.75rem;
+
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+
   color: #003459;
-  margin-bottom: 1rem;
+
+  margin-bottom: 0.8rem;
+}
+
+.sobre-titulo {
+  font-family: 'DM Serif Display', serif;
+
+  font-weight: 400;
+
+  font-size: 3.5rem;
+
+  line-height: 1.1;
+
+  color: #003459;
+
+  text-align: center;
+
+  margin: 0 0 4rem;
+}
+
+
+/* ================================
+   PARTE PRINCIPAL
+================================ */
+
+.sobre-principal {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5rem;
+
+  margin-bottom: 6rem;
+}
+
+.sobre-texto-container {
+  flex: 1;
+
+  max-width: 520px;
 }
 
 .sobre-texto {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto 2.5rem auto;
-  line-height: 1.7;
+
+  font-size: 0.98rem;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  color: #444;
+
+  margin: 0 0 1.3rem;
+}
+
+.sobre-texto strong {
+  color: #003459;
+
+  font-weight: 600;
+}
+
+
+/* ================================
+   IMAGEM
+================================ */
+
+.sobre-imagem {
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
 }
 
 .sobre-img {
   width: 100%;
-  max-width: 700px;
+
+  max-width: 480px;
+
+  height: 350px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  box-shadow: 0 15px 35px rgba(0, 52, 89, 0.12);
+}
+
+
+/* ================================
+   FUNDADORA
+================================ */
+
+.fundadora {
+  position: relative;
+
+  display: flex;
+
+  align-items: stretch;
+
+  background-color: #003459;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  padding: 3.5rem;
+
+  box-shadow: 0 15px 35px rgba(0, 52, 89, 0.12);
+}
+
+.fundadora-detalhe {
+  width: 6px;
+
+  background-color: #F9D923;
+
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+
+  margin-right: 2.5rem;
+}
+
+.fundadora-texto {
+  max-width: 750px;
+}
+
+.fundadora-tag {
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.7rem;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #F9D923;
+}
+
+.fundadora h3 {
+  font-family: 'DM Serif Display', serif;
+
+  font-size: 2.5rem;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  color: #ffffff;
+
+  margin: 0.6rem 0 1.2rem;
+}
+
+.fundadora p {
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.92rem;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  margin-bottom: 1rem;
+}
+
+
+/* ================================
+   RESPONSIVO
+================================ */
+
+@media (max-width: 800px) {
+
+  .sobre {
+    padding: 4rem 1.5rem;
+  }
+
+  .sobre-titulo {
+    font-size: 2.8rem;
+
+    margin-bottom: 3rem;
+  }
+
+  .sobre-principal {
+    flex-direction: column;
+
+    gap: 2.5rem;
+
+    margin-bottom: 4rem;
+  }
+
+  .sobre-texto-container {
+    max-width: 700px;
+
+    text-align: center;
+  }
+
+  .sobre-img {
+    max-width: 500px;
+
+    height: 300px;
+  }
+
+  .fundadora {
+    padding: 2.5rem 2rem;
+  }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+  .sobre {
+    padding: 4rem 1.2rem;
+  }
+
+  .sobre-titulo {
+    font-size: 2.4rem;
+  }
+
+  .sobre-texto {
+    font-size: 0.9rem;
+  }
+
+  .sobre-img {
+    height: 240px;
+
+    border-radius: 14px;
+  }
+
+  .fundadora {
+    padding: 2rem 1.5rem;
+
+    flex-direction: column;
+  }
+
+  .fundadora-detalhe {
+    width: 50px;
+
+    height: 4px;
+
+    margin: 0 0 1.5rem;
+  }
+
+  .fundadora h3 {
+    font-size: 2rem;
+  }
+
+  .fundadora p {
+    font-size: 0.88rem;
+  }
+
 }
