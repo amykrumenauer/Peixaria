@@ -45,12 +45,12 @@ const Produtos = () => {
             </p>
 
             <a
-              href={cardapioPDF}
+              href={"https://canva.link/pzmi28sax11vnua"}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-cardapio"
             >
-              Ver Cardápio em PDF
+              Ver Cardápio
             </a>
 
             <p className="produtos-mensagem">
