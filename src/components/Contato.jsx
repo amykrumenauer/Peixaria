@@ -27,33 +27,26 @@ const Contato = () => {
 
 
         <div className="contato-cards">
+
         <a
           href="https://wa.me/5541991064083"
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => {
-            if (typeof window.gtag === 'function') {
-              window.gtag('event', 'conversion', {
-                send_to: 'AW-339498621/A4ILCOH41uccEP2s8aEB',
-                value: 1.0,
-                currency: 'BRL'
-              });
-            }
-          }}
+          className="contato-card"
         >
-          <div className="icone-container">
-            <img
-              src={whatsappIcon}
-              alt="WhatsApp"
-              className="icone-img"
-            />
-          </div>
+            <div className="icone-container">
+              <img
+                src={whatsappIcon}
+                alt="WhatsApp"
+                className="icone-img"
+              />
+            </div>
 
-          <div>
-            <h3>WhatsApp</h3>
-            <p>Faça seu pedido</p>
-          </div>
-        </a>
+            <div>
+              <h3>WhatsApp</h3>
+              <p>Faça seu pedido</p>
+            </div>
+          </a>
 
 
           <a
